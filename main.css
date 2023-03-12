@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgba(255, 241, 220, 0.5);
+    display: flex;
+    justify-content: center;
+}
+
+.wrap {
+    width: 700px;
+    height: 100vh;
+}
+
+.headerContainer {
+    background-color: #E8D5C4;
+    width: 700px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.title {
+    font-size: 32px;
+    padding-left: 30px;
+    display: flex;
+
+}
+
+.title span {
+    width: 44px;
+    height: 44px;
+    margin-right: 20px;
+}
+
+.profileImg {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.headerBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+.modeChange {
+    display: flex;
+    font-size: 16px;
+}
+
+.lightMode {
+    border-radius: 20px;
+    width: 80px;
+    background-color: #292a2d;
+    fill: white;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.darkMode {
+    border-radius: 20px;
+    width: 80px;
+    background-color: #FEFCF3;
+    fill: black;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lightMode svg {
+    width: 15px;
+}
+
+.darkMode svg {
+    width: 13px;
+}
+
+.lightMode:hover {
+    fill: #38E54D;
+    background-color: #53575d;
+    cursor: pointer;
+}
+
+.darkMode:hover {
+    fill: #ead61c;
+    background-color: #292828;
+    color: white;
+    cursor: pointer;
+}
+
+.postContainer {
+    background-color: #FFF1DC;
+    width: 700px;
+    height: 100vh;
+    padding: 80px 0;
+}
+
+.postBox {
+    width: 100%;
+    height: 100%;
+    padding: 50px 50px;
+    position: relative;
+}
+
+.navBox li {
+    list-style: none;
+}
+
+.navBox svg {
+    width: 35px;
+    height: 30px;
+    transition: 200ms ease-in-out;
+}
+
+.navBox svg:hover {
+    transform: scale(0.8);
+}
+
+.navContainer {
+    background-color: #E8D5C4;
+    width: 700px;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.navBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+.postTitle {
+    position: absolute;
+    font-size: 80px;
+    top: 50px;
+}
+
+.mainPost1 {
+    position: absolute;
+    font-size: 30px;
+    top: 230px;
+    left: 90px;
+}
+
+.mainPost2 {
+    position: absolute;
+    font-size: 30px;
+    top: 360px;
+    left: 160px;
+}
+
+.mainPost3 {
+    position: absolute;
+    font-size: 30px;
+    top: 490px;
+    left: 90px;
+}
+
+.mainPost4 {
+    position: absolute;
+    font-size: 30px;
+    top: 620px;
+    left: 410px;
+}
+
+.mainPost4 span {
+    font-size: 40px;
+}
+
+.listBox {
+    width: 100%;
+    height: 100%;
+    padding: 50px 50px;
+    display: flex;
+}
+
+.contactList {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.contactImg {
+    width: 50px;
+    height: 50px;
+}
+
+.contactListLink {
+    position: relative;
+}
+
+.contactListLink::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    width: 200%;
+    top: 60px;
+    left: -30px;
+    padding: 5px 7px;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: #2C3333;
+    color: #fff;
+    opacity: 0;
+}
+
+.contactListLink:hover::before {
+    opacity: 1;
+}
+
+.aboutBox {
+    width: 100%;
+    height: 100%;
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.aboutTitle {
+    font-size: 56px;
+}
+
+.aboutText {
+    font-size: 21px;
+}
+
+.favoriteBox {
+    width: 100%;
+    height: 100%;
+    padding: 50px 50px;
+}
+
+.music {
+    width: 100%;
+    height: 300px;
+}
+
+.musicTitle, .activityTitle{
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.songs {
+    overflow: auto;
+    display: flex;
+}
+
+.songs img {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.songs:last-child {
+    margin-right: 0;
+}
+
+.activity {
+    width: 100%;
+    height: 300px;
+    padding-top: 30px;
+}
+
+.things {
+    overflow: scroll;
+    display: flex;
+}
+
+
+.things img {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.thingsImg {
+    position: relative;
+}
+
+.things span {
+    width: 200px;
+    height: 200px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 90px;
+    color: #8D7B68;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.thingsImg:hover .imgs{
+    opacity: 0.08;
+}
+
+.things:hover .ps {
+    opacity: 1;
+}
+
+.travelBox {
+    width: 100%;
+    height: 100%;
+    padding: 50px 50px;
+    overflow: auto;
+}
+
+.country {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.countryImg {
+    display: flex;
+    overflow: scroll;
+}
+
+.countryBox img {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.countryBox {
+    margin-bottom: 40px;
+}
